@@ -1,0 +1,31 @@
+---
+title: "Datos Hidrologicos"
+author: "Byron"
+date: "20/5/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+```{r message=FALSE}
+# Carga de graphics
+library(graphics)
+
+# Carga de ggplot2
+library(ggplot2)
+
+# Carga de plotly
+library(plotly)
+
+# Carga de dplyr
+library(dplyr)
+```{r}
+# Importar los datos
+
+inp <- read.csv("FDC.csv",na.strings = "")
+
+#Las primeras 6 filas del archivo
+head(inp)
+
+
